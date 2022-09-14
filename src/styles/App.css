@@ -1,0 +1,986 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+}
+
+.App{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.socialSearch{
+    height: 70px;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.connection{
+    background-color: rgb(236, 236, 236);
+    width: 60px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.conectionBlock{
+    display: flex;
+    align-items: center;
+}
+
+.telNum{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.vk, .loop, .telegram, .menuBtn, .mailImg{
+    margin-left: 8px;
+    cursor: pointer;
+    width: 40px;
+}
+
+.mailImg{
+    margin-top: 5px;
+}
+
+.menuBtn{
+    display: none;
+}
+
+.notifyBg{
+    width: 100%;
+    background-color: rgb(205, 205, 205);
+}
+
+.notify{
+    width: 100%;
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+}
+
+.circle{
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #22d667, #74caf2);
+    margin-right: 5px;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.titleBlock{
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.logoImg{
+    margin-top: -20px;
+    width: 150px;
+    height: 150px;
+}
+
+.textBlockTitle{
+    display: block;
+}
+
+.subTitle{
+    line-height: 25px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 100;
+    color: grey;
+}
+
+.title{
+    margin-top: 5px;
+    font-weight: bold;
+    color:black;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navItem{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+
+.navImg{
+    width: 38px;
+    height: 38px;
+}
+
+.navImgWrap{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navText{
+    text-transform: uppercase;
+    font-size: 20px;
+    align-items: center;
+    padding-top: 15px;
+    margin-left: 10px;
+}
+
+.strelka{
+    width: 10px;
+    height: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.aboutUs{
+    background-color: #fdd816;
+}
+
+.parent{
+    background-color: #048fc1;
+}
+
+.students{
+    background-color: #5aec41;
+}
+
+.teacher{
+    background-color: #f5563e;
+}
+
+.class{
+    background-color: #b8308a;
+}
+
+.speachAPP{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-top: 30px;
+    background-image: url('../img/school.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.speach{
+    display: flex;
+}
+
+.privetstvie{
+    height: 50%;
+    padding-top: 150px;
+    margin-left: 150px;
+}
+
+.mainPriv{
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+    letter-spacing: 4px;
+    line-height: 50px;
+}
+
+.secondPriv{
+    color: white;
+    font-size: 20px;
+    width: 75%;
+    margin-top: 20px;
+}
+
+.shadow{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    left: 0;
+    background: rgba(0, 0, 0, 0.299);
+}
+
+.rech{
+    width: 55%;
+    height: 500px; 
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 0 20px 20px 0;
+}
+
+.headerRech{
+    width: 24%;
+    display: flex;
+    position: relative;
+}
+
+.dearF{
+    height: 120px;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.rechText{
+    width: 300px;
+    height: 30px;
+    padding-top: 35px;
+    color: #464646;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.imgD{
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px white solid;
+    background-image: url('../img/director.png');
+    background-size: 100% 100%;
+}
+
+.rechContent{
+    padding: 0 20px;
+    overflow-y: scroll; 
+    height: 65%;
+    padding-bottom: 5px;
+}
+.rechContent::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+.TitleSiteBlock{
+    margin-top: 40px;
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.News{
+    max-width: 1000px;
+    margin: 30px auto
+}
+
+.newsItem{
+    width: 300px;
+    height: 230px;
+    border-radius: 20px;
+    background-color: rgb(231, 231, 231);
+    margin: 30px 15px 0 15px;
+}
+
+
+.Nc{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.newsContent{
+    margin-top: 120px;
+}
+
+.imgN{
+    border-radius: 20px 20px 0 0 ;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.titleNewsItem{
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.titleNewsItem:hover{
+    color: #241bc7;
+    text-decoration: underline;
+    
+}
+
+.newsImgBlock{
+    cursor: pointer;
+}
+
+.Contacts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contactsWrap{
+    width: 100%;
+    background: linear-gradient(45deg, #46e683, #8dd2f2);
+}
+
+.con{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.contactsItem{
+    margin-top: 20px;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    margin-right: 30px;
+}
+
+.rang{
+    text-transform: uppercase;
+    font-weight: 400;
+    color: grey;
+    font-size: 14x;
+    margin-bottom: 15px;
+}
+
+.Name{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.telNunCon{
+    color: #190df0;
+    margin-bottom: 10px;
+}
+
+.mail{
+    color: #4037f9;
+}
+
+.footer{
+    width: 100%;
+    margin-top: 10px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.256);
+}
+
+.fotContent{
+    padding: 20px 10px;
+    display: flex;
+}
+
+.leftF, .rightF{
+    width: 50%;
+}
+
+.lineL1, .lineR1{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.lineL2, .lineR2{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+
+
+.NavPopup{
+    position: absolute;
+    top: 100%;
+    background: #fff;
+    width: 390px;
+    height: 200px;
+    display: none;
+    flex-wrap: wrap;
+    z-index: 100;
+    border-top: #34cd6f 2px solid;
+    background-color: #ffffff;
+    align-items: center;
+}
+/* #98daf8; */
+.menuItem{
+    width: 380px;
+    height: 30px;
+    text-align: left;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding-left: 10px;
+    z-index: 100;
+}
+
+.menuItemClass{
+    width: 100px;
+    height: 30px;
+    text-align: left;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.menuItemClass:hover, .menuItem:hover{
+    transition: 0.3s ease-in-out;
+    color: rgb(30, 83, 255);
+    text-decoration: underline;
+}
+
+
+.navItem{
+    display: block;
+    position: relative;
+}
+
+.NavItemCon{
+    display: flex;
+    cursor: pointer;
+}
+
+
+.NewsContent{
+    width: 800px;
+    height: 600px;
+    background-color: #fff;
+    margin: auto;
+    z-index: 300;
+    padding: 20px;
+    border-radius: 12px;
+    color: rgb(0, 0, 0);
+    transform: scale(0.5);
+    transition: 0.4s;
+}
+
+.NewsContent.active{
+    transform: scale(1);
+}
+
+.NewsWin.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.NewsWin{
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.425);
+    top: 0;
+    left: 0;
+    z-index: 200;
+}
+
+.imgNN{
+    width: 400px;
+    height: 300px;
+    margin: 10px 20px 5px 0;
+}
+
+.textN{
+    text-indent: 1.5em;
+}
+
+.titleNewsOpenPage{
+    font-weight: bold;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.title_page{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.path{
+    color: #696969;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.page_bg{
+    box-shadow: 0 0 5px;
+    background-color: rgb(250, 250, 250);
+}
+
+.about_page{
+    padding: 10px;
+}
+
+
+.imgForAbout{
+    width: 600px;
+    float: left;
+    margin: 10px 20px 10px 2px;
+}
+
+.imgForAbout1{
+    width: 600px;
+    height: 400px; 
+    margin: 10px 20px 10px 2px;
+}
+.about_content1{
+    display: flex;
+}
+
+.textAreaA{
+    width: 450px;
+    height: 150px;
+    font-size: 16px;
+}
+
+.createNews{
+    padding: 5px 10px;
+    background-color: inherit;
+    border: 2px grey solid;
+    margin-top: 15px;
+}
+
+.textAreaT{
+    width: 450px;
+    height: 40px;
+    font-size: 25px;
+    border: 1px solid black;
+}
+
+.adminImg{
+    width: 300px;
+    margin-top: 20px;
+}
+
+.fieldSetAdnim{
+    padding: 15px;
+    margin: 25px 0;
+}
+
+.legendAdnim{
+    margin-left: 49px;
+}
+
+.teach_container{
+    width: 100%;
+    display: flex;
+    padding: 10px 15px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+.n_container{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    padding: 10px 15px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+.t_img{
+    width: 100%;
+    height: 100%;
+}
+
+.teacher_img{
+    width: 130px;
+    border: solid 4px rgb(175, 7, 7);
+    border-style: ridge;
+}
+.n_img{
+    width: 250px;
+    height: 150px;
+    border: solid 4px rgb(175, 7, 7);
+    border-style: ridge;
+}
+
+.teacher_info{
+    margin-left: 20px;
+}
+
+.n_info{
+    margin-left: 20px;
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    padding: 5px;
+}
+
+.fio{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.subject{
+    margin-top: 5px;
+    display: flex;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #dd0805;
+
+}
+
+.t_mail, .t_tel{
+    display: flex;
+    margin-top: 5px;
+    color: #027eac;
+}
+
+.pods{
+    text-transform: none;
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    color: grey;
+    font-style: normal;
+}
+
+.mes{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: rgb(192, 49, 49);
+    letter-spacing: 3px;
+    height: 300px;
+    padding-top: 100px;
+}
+
+.register{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.reg_in{
+    height: 20px;
+}
+
+.reg_wrap{
+    margin-top: 100px;
+}
+
+.reg_con{
+    padding: 15px 20px;
+}
+
+.reg_title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.reg_txt{
+    font-weight: bold;
+    margin: 3px 0;
+}
+
+.reg_btn_w{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.reg_btn{
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.reg_input{
+    width: 100%;
+}
+
+.lineR2 a{
+    color: white;
+}
+
+
+
+
+/* ---------------------adaptiv---------------------------------- */
+@media screen and (max-width: 980px) {
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .subTitle{
+        line-height: 18px;
+        font-size: 18px;
+    }
+    
+    .title{
+        line-height: 20px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .subTitle{
+        line-height: 20px;
+        font-size: 20px;
+    }
+    
+    .title{
+        line-height: 22px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .subTitle{
+        line-height: 13px;
+        font-size: 13px;
+    }
+    .about_content1{
+        display: block;
+    }
+    .imgForAbout1{
+        width: 100%;
+        height: auto;
+    }
+    
+    .imgForAbout {
+        width: 100%;
+    }
+    .message{
+        font-size: 13px;
+        line-height: 13px;
+    }
+    .circle{
+        display: none;
+    }
+
+    .menuBtn{
+        display: inline;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .title{
+        line-height: 15px;
+        font-size: 15px;
+    }
+
+    .logoImg{
+        margin-top: -20px;
+        width: 100px;
+        height: 100px;
+    }
+    .speach{
+        display: block;
+    }
+    .rech{
+        width: 100%;
+        height: 380px;
+    }
+    .privetstvie{
+        height: 20%;
+        padding-top: 20px;
+        margin-left: 20px;
+        width: 100%;
+    }
+    .speachAPP{
+        padding-top: 5px;
+    }
+    .mainPriv{
+        font-size: 35px;
+        letter-spacing: 4px;
+        line-height: 35px;
+    }
+    
+    .speachAPP{
+        margin-top: 0;
+    }
+
+    .secondPriv{
+        font-size: 20px;
+        width: 75%;
+        margin-top: 10px;
+    }
+    .socialSearch{
+        height: 50px;
+    }
+    .connection{
+        width: 50px;
+        height: 40px;
+    }
+    .vk, .loop, .telegram, .menuBtn, .mailImg{
+        width: 30px;
+    }
+    .telNum{
+        font-size: 20px;
+    }
+    .headerRech {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .title{
+        line-height: 12px;
+        font-size: 12px;
+    }
+    .subTitle{
+        line-height: 12px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 752px) {
+    .newsItem{
+        width: 90%;
+    }
+    .imgN{
+        width: 100%;
+    }
+    .contactsItem{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 616px) {
+    .contactsItem{
+        width: 70%;
+    }
+    .container-slider {
+        height: 320px;
+    }
+    .fio{
+        font-size: 17px;
+    }
+    .subject{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    /* .container{
+        width: 95%;
+    } */
+    .mainPriv{
+        font-size: 25px;
+        letter-spacing: 2px;
+        line-height: 25px;
+    }
+    .secondPriv{
+        font-size: 12.5px;
+        width: 75%;
+        margin-top: 10px;
+    }
+    .container-slider{
+        margin-top: 10px;
+    }
+    .rechText{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 406px) {
+   .message{
+    font-size: 10px;
+    line-height: 10px;
+   }
+   .dearF{
+    margin-left: 120px;
+   }
+   .telNum{
+    font-size: 14px;
+   }
+   .vk, .loop, .telegram, .menuBtn, .mailImg{
+    width: 22px;
+    }
+    .btn-slide{
+        width: 32px;
+        height: 32px;
+    } 
+    .next, .prev{
+        top: 94%;
+    }
+    .logoImg {
+        margin-top: 1px;
+    }
+    .contactsItem{
+        width: 80%;
+    }
+    .fio{
+        font-size: 13px;
+    }
+    .subject{
+        font-size: 10px;
+    }
+    .t_mail, .t_tel{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .fio{
+        font-size: 13px;
+    }
+    .subject{
+        font-size: 10px;
+        text-transform: lowercase;
+    }
+    .t_mail, .t_tel{
+        font-size: 10px;
+    }
+    .pods{
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .teach_container{
+        padding: 3px 5px;
+    }
+    .teacher_info{
+        margin-left: 5px;
+    }
+}
+
+/* ----------------------------------------------------------- */

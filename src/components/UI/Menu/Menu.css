@@ -1,0 +1,129 @@
+.menu{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transform: translateX(-140%);
+    transition: all 0.2s;
+}
+
+.menu.active{
+    transform: translateX(0);
+}
+
+.blur{
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(2px);
+    position: absolute;
+    left: 40%;
+}
+
+.menu__content{
+    width: 40%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+.menu__header{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+.mainUl, .mainLi{
+    text-align: left;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.mainUl{
+    text-align: left;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainLi{
+    cursor: pointer;
+}
+
+/* .secondUl, .secondLi, Link{
+    display: flex;
+    align-items: center;
+    color: white;
+    
+    text-decoration: none;
+} */
+
+.secondUl{
+    display: none;
+    text-align: left;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuBtnS{
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 15px;
+    display: none;
+}
+
+@media screen and (max-width: 860px) {
+    .menu__content{
+        width: 100%;
+    }
+    .blur{
+        backdrop-filter: none;
+        display: none;
+    }
+    .menuBtnS{
+        display: block;
+    }
+}
+
+
+.secondUl1, .secondUl2, .secondUl3,.secondUl4,.secondUl5{
+    display: none;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+/* a:-webkit-any-link{
+    color: aquamarine;
+} */
+
+.activeUl{
+    display: block;
+}
+
+.mainLi{
+    width: 100%;
+    z-index: 100;
+    text-decoration: underline 2px;
+}
+
+.secondLi{
+    margin-top: 3px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    text-decoration: underline 2px;
+    font-size: 0.8rem;
+    color: white;
+    font-weight:100;
+}
