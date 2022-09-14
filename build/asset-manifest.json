@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d767d5df.css",
+    "main.js": "/static/js/main.fc2a0ead.js",
+    "static/media/school.png": "/static/media/school.d85f48ffdf8b2573bc96.png",
+    "static/media/director.png": "/static/media/director.2f88e3ff80c4d2b507a1.png",
+    "static/media/logo.png": "/static/media/logo.1fd2c074d7413227415d.png",
+    "static/media/teacher.png": "/static/media/teacher.8fbe9ae5701e47038933.png",
+    "static/media/vk.png": "/static/media/vk.46a727c40540261a6ad3.png",
+    "static/media/telegram.png": "/static/media/telegram.e9722f26cc228e817986.png",
+    "static/media/reading.png": "/static/media/reading.1c2139787a0dbd890099.png",
+    "static/media/Wloop.png": "/static/media/Wloop.e395377fca99ec8dfca4.png",
+    "static/media/parents.png": "/static/media/parents.9be8989846c4f745b3cf.png",
+    "static/media/apple.png": "/static/media/apple.78a024bc776d8794e31b.png",
+    "static/media/university.png": "/static/media/university.218b337e30d49be569b9.png",
+    "static/media/left-arrow.svg": "/static/media/left-arrow.53878c51904c34f1288e46174c107c57.svg",
+    "static/media/right-arrow.svg": "/static/media/right-arrow.8b8fb639d7ed68731e5b073c0700d3bf.svg",
+    "index.html": "/index.html",
+    "main.d767d5df.css.map": "/static/css/main.d767d5df.css.map",
+    "main.fc2a0ead.js.map": "/static/js/main.fc2a0ead.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d767d5df.css",
+    "static/js/main.fc2a0ead.js"
+  ]
+}
